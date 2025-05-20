@@ -23,7 +23,7 @@ class StartFormRequest extends MoonShineFormRequest
             && auth(Settings::moonShineGuard())->user() instanceof BeSpoofable
             && auth(Settings::moonShineGuard())->user() instanceof Spoofable
             && auth(Settings::moonShineGuard())->user()?->canBeSpoofed()
-            && auth(Settings::moonShineGuard())->user()?->canSpeefed();
+            && auth(Settings::moonShineGuard())->user()?->canSpoofed();
     }
     protected $stopOnFirstFailure = true;
 
