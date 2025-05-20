@@ -15,7 +15,7 @@ final class SpoofingActionButton
     {
         return ActionButton::make(
             label: __(Settings::ALIAS.'::ui.buttons.start.label'),
-            url: static fn (mixed $data): string => route(Settings::ALIAS.'.enter', [
+            url: static fn (mixed $data): string => route(Settings::ALIAS.'.start', [
                 config(Settings::ALIAS.'.resource_item_key') => $data->getKey(),
             ]),
         )
