@@ -1,0 +1,65 @@
+{
+  "name": "ermakk/ms-user-spoofing",
+  "type": "library",
+  "description": "User Spoofing for MoonShine admin panel v^3.",
+  "keywords": [
+    "spoof",
+    "spoofing",
+    "impersonation",
+    "user-proxy",
+    "laravel",
+    "moonshine",
+    "authorization",
+    "permission"
+  ],
+  "authors": [
+    {
+      "name": "Ivan Losev",
+      "email": "los-van@mail.ru",
+      "homepage": "https://github.com/ermakk",
+      "role": "Owner"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ermakk/ms-user-spoofing/issues",
+    "source": "https://github.com/ermakk/ms-user-spoofing"
+  },
+  "license": "MIT",
+  "require": {
+    "php": "^8.2"
+  },
+  "require-dev": {
+    "moonshine/moonshine": "^3.12.6",
+    "moonshine/changelog": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ermakk\\MoonshineUserSpoofing\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ermakk\\MoonshineUserSpoofing\\Test\\": "tests/"
+    }
+  },
+  "scripts": {
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Ermakk\\MoonshineUserSpoofing\\SpoofingServiceProvider\\Providers"
+      ]
+    }
+  },
+  "conflict": {
+    "moonshine/moonshine": "<3"
+  },
+  "config": {
+    "sort-packages": true,
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
