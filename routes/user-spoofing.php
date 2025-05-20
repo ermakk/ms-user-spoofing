@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Ermakk\MoonShineUserSpoofing\Http\Controllers\SpoofingController;
+use Ermakk\MoonshineUserSpoofing\Http\Controllers\SpoofingController;
 use Ermakk\MoonShineUserSpoofing\Services\Settings;
 use Illuminate\Support\Facades\Route;
 use MoonShine\Laravel\Http\Middleware\ChangeLocale;

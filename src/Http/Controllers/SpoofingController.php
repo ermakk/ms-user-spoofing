@@ -15,11 +15,7 @@ use MoonShine\Laravel\Http\Controllers\MoonShineController;
 use MoonShine\Laravel\MoonShineUI;
 use MoonShine\Support\Enums\ToastType;
 
-/**
- * Class ImpersonateController
- *
- * @author Losev Ivan
- */
+
 class SpoofingController extends MoonShineController
 {
     /**
