@@ -47,7 +47,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Ermakk\\MoonshineUserSpoofing\\SpoofingServiceProvider\\Providers"
+        "Ermakk\\MoonshineUserSpoofing\\Providers\\SpoofingServiceProvider"
       ]
     }
   },
