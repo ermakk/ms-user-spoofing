@@ -18,9 +18,7 @@ use MoonShine\Support\Enums\ToastType;
 
 class SpoofingController extends MoonShineController
 {
-    /**
-     * Enter impersonate action
-     * */
+
     public function start(StartFormRequest $request, StartAction $action): Redirector|RedirectResponse
     {
         try {
@@ -42,9 +40,7 @@ class SpoofingController extends MoonShineController
         return redirect(config(Settings::ALIAS.'.success_redirect_to', '/'));
     }
 
-    /**
-     * Stop impersonate action
-     * */
+
     public function stop(StopFormRequest $request, StopAction $action): Redirector|RedirectResponse
     {
         $result = $action->handle();
